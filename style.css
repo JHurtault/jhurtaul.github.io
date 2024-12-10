@@ -4,6 +4,8 @@
   --dark-blue: rgba(33, 26, 144, 1);
   --purple: rgba(124, 51, 185, 1);
   --light-gray: rgb(226, 226, 226);
+  --black: rgb(0, 0, 0);
+  --darker-yellow: rgb(204, 204, 0);
 }
 
 body,
@@ -15,7 +17,7 @@ html {
 }
 
 header {
-  background-color: var(--yellow);
+  background-color: var(--white);
   padding: 0.5rem;
   position: fixed;
   width: 100%;
@@ -35,11 +37,25 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: var(--purple);
+  color: var(--black);
   text-decoration: none;
+  font-weight: bold;
 }
 
 header nav ul li a:hover {
   background-color: var(--light-gray);
   cursor: pointer;
+}
+
+main {
+  margin-top: 34px;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+section:nth-child(odd) {
+  background-color: var(--yellow);
 }

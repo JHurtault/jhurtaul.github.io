@@ -1,0 +1,45 @@
+:root {
+  --yellow: rgb(255, 255, 51);
+  --white: rgb(255, 255, 255);
+  --dark-blue: rgba(33, 26, 144, 1);
+  --purple: rgba(124, 51, 185, 1);
+  --light-gray: rgb(226, 226, 226);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--yellow);
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 5rem;
+}
+
+header nav ul li a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: var(--light-gray);
+  cursor: pointer;
+}

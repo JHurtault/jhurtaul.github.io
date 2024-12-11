@@ -6,6 +6,7 @@
   --light-gray: rgb(226, 226, 226);
   --black: rgb(0, 0, 0);
   --darker-yellow: rgb(204, 204, 0);
+  --dark-green: rgb(0, 102, 0);
 }
 
 body,
@@ -48,7 +49,7 @@ header nav ul li a:hover {
 }
 
 main {
-  margin-top: 34px;
+  margin-top: 80px;
 }
 
 section {
@@ -58,4 +59,12 @@ section {
 
 section:nth-child(odd) {
   background-color: var(--yellow);
+}
+
+section:nth-child(even) {
+  background-color: var(--dark-green);
+}
+
+.project {
+  margin-bottom: 20px;
 }

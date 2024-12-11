@@ -79,6 +79,9 @@ form {
   margin: 0 auto;
   background-color: var(--dark-green);
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 fieldset {
@@ -111,11 +114,14 @@ form button {
 }
 
 form button {
-  width: 94%;
+  width: auto;
+  padding: 10px 20px;
   background-color: var(--black);
   color: var(--white);
   border: none;
   cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
 }
 
 form button:hover {

@@ -161,7 +161,7 @@ footer {
   background-color: var(--white);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid --light-gray;
+  border: 1px solid var(--light-gray);
   width: 50%;
   text-align: center;
   border-radius: 8px;

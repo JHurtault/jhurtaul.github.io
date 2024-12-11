@@ -43,6 +43,7 @@ header nav ul li a {
   color: var(--dark-blue);
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
 }
 
 header nav ul li a:hover {
@@ -217,8 +218,8 @@ footer {
 /* For large screens with width of 1024px x 720px */
 @media screen and (min-width: 1024px) {
   header nav ul {
-    justify-content: flex-start;
-    padding-left: 20px;
+    justify-content: center;
+    padding-left: 0px;
   }
   header nav ul li {
     margin: 0 2rem;

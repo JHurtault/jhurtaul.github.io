@@ -7,6 +7,7 @@
   --black: rgb(0, 0, 0);
   --darker-yellow: rgb(204, 204, 0);
   --dark-green: rgb(0, 102, 0);
+  --red: rgb(204, 0, 0);
 }
 
 body,
@@ -67,4 +68,54 @@ section:nth-child(even) {
 
 .project {
   margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--dark-green);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+  width: 94%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid --light-gray;
+  border-radius: 5px;
+}
+
+form button {
+  width: 94%;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--purple);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--black);
+  color: var(--white);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.error-message {
+  color: var(--red);
+  font-size: 0.9em;
+  margin-top: 5px;
 }

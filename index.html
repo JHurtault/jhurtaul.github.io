@@ -74,7 +74,19 @@
                 </figcaption>
               </figure>
           <li>United States Navy - Gas Turbine Technician</li>
+          <figure>
+            <img src="images/Amazon-sds.png" alt="Amazon web services - SDS" />
+            <figcaption>
+              Amazon web services sds logo.
+            </figcaption>
+          </figure>
           <li>AWS - Security Support Engineer -</li>
+          <figure>
+            <img src="images/Amazon-logo.png" alt="Amazon logo" />
+            <figcaption>
+              Logo of Amazon e-commerce business.
+            </figcaption>
+          </figure>
           <li>Amazon - Software development and deployment</li>
         </ul>
       </section>
@@ -97,24 +109,32 @@
           </p>
         </div>
       </section>
-
-      <!-- Section 4: Contact information -->
+    
+      <!-- User contact information form-->
       <form id="contact">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <span id="name-invalid" class="error-message"></span>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <span id="email-invalid" class="error-message"></span>
-        </div>
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <span id="message-invalid" class="error-message"></span>
-        </div>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <span id="name-invalid" class="error-message"></span>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span id="email-invalid" class="error-message"></span>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Your Message</legend>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span id="message-invalid" class="error-message"></span>
+          </div>
+        </fieldset>
+        
         <button type="submit">Send</button>
       </form>
 

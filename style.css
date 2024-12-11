@@ -1,13 +1,13 @@
 :root {
-  --yellow: rgb(255, 255, 51);
+  --yellow: rgb(255, 217, 0);
   --white: rgb(255, 255, 255);
-  --dark-blue: rgba(33, 26, 144, 1);
-  --purple: rgba(124, 51, 185, 1);
-  --light-gray: rgb(226, 226, 226);
+  --dark-blue: rgba(22, 20, 120, 1);
+  --purple: rgba(90, 40, 140, 1);
+  --light-gray: rgb(180, 180, 180);
   --black: rgb(0, 0, 0);
-  --darker-yellow: rgb(204, 204, 0);
-  --dark-green: rgb(0, 102, 0);
-  --red: rgb(204, 0, 0);
+  --darker-yellow: rgb(204, 163, 0);
+  --dark-green: rgb(0, 85, 0);
+  --red: rgb(153, 0, 0);
 }
 
 body,
@@ -20,10 +20,11 @@ html {
 
 header {
   background-color: var(--white);
-  padding: 0.5rem;
+  padding: 1.3rem;
   position: fixed;
   width: 100%;
   top: 0;
+  border: 10px solid var(--black);
 }
 
 header nav ul {
@@ -39,13 +40,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: var(--black);
+  color: var(--dark-blue);
   text-decoration: none;
   font-weight: bold;
 }
 
 header nav ul li a:hover {
   background-color: var(--light-gray);
+  color: var(--black);
   cursor: pointer;
 }
 
@@ -60,10 +62,12 @@ section {
 
 section:nth-child(odd) {
   background-color: var(--yellow);
+  color: var(--black);
 }
 
 section:nth-child(even) {
   background-color: var(--dark-green);
+  color: var(--white);
 }
 
 .project {
@@ -74,6 +78,20 @@ form {
   max-width: 400px;
   margin: 0 auto;
   background-color: var(--dark-green);
+  color: var(--white);
+}
+
+fieldset {
+  border: 1px solid var(--light-gray);
+  padding: 20px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 10px;
 }
 
 form label {
@@ -88,7 +106,7 @@ form button {
   width: 94%;
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid --light-gray;
+  border: 1px solid var(--dark-blue);
   border-radius: 5px;
 }
 
@@ -101,7 +119,7 @@ form button {
 }
 
 form button:hover {
-  background-color: var(--purple);
+  background-color: var(--dark-blue);
 }
 
 footer {
@@ -155,4 +173,63 @@ footer {
   color: var(--black);
   text-decoration: none;
   cursor: pointer;
+}
+
+/* For mobile screens with minimum width of 414px x 720px */
+@media screen and (max-width: 414px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+  main {
+    margin-top: 120px;
+  }
+  section {
+    padding: 20px;
+    text-align: left;
+  }
+  form {
+    width: 90%;
+    padding: 10px;
+  }
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .project {
+    margin-bottom: 15px;
+  }
+}
+
+/* For large screens with width of 1024px x 720px */
+@media screen and (min-width: 1024px) {
+  header nav ul {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  header nav ul li {
+    margin: 0 2rem;
+  }
+  section {
+    padding: 60px;
+    text-align: center;
+  }
+  form {
+    max-width: 600px;
+    padding: 20px;
+  }
+  .modal-content {
+    width: 50%;
+    padding: 30px;
+  }
+  .project {
+    margin-bottom: 30px;
+  }
 }
